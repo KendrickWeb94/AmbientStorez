@@ -21,7 +21,7 @@ const Loader = () => {
       {visible && (
         <div>
           <div className="  flex fixed top-0 z-50 h-screen w-full bg-white dark:bg-black items-center justify-center">
-            <Image src={Spinner} alt='' className=' w-[200px]'/>
+            <span className="springer"></span>
           </div>
         </div>
       )}

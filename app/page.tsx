@@ -1,5 +1,6 @@
 "use client"
 
+import { ButtonSpinners } from "./animations/Button-Spinners";
 import Navbar from "./components/Header";
 
 
@@ -14,7 +15,8 @@ import Navbar from './components/Header';
 
 const page = () => {
   return (
-    <div className=' w-full flex h-auto py-2'>
+    <div className=' w-full  h-auto py-2'>
+      <ButtonSpinners />
       <Navbar />
     </div>
   );

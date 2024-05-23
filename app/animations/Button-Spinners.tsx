@@ -1,13 +1,12 @@
+import React from 'react'
 
 
-import React from 'react';
-
-const ButtonSpinners = () => {
+export const ButtonSpinners = () => {
   return (
     <div>
-      
+        <span className="loader dark:bg-white bg-black"></span>
     </div>
-  );
+  )
+
 }
 
-export default ButtonSpinners;
