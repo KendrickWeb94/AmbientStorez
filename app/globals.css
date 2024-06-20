@@ -74,99 +74,42 @@
       @apply bg-background text-foreground;
     }
   }
-
-  .loader {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    left: -32px;
-    border-radius: 50%;
-    color: #fff;
-    box-shadow: 32px 0 , -32px 0 ,  64px 0;
-  }
-  
-  .loader::after {
-    content: '';
-    position: absolute;
-    left: -32px;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    border-radius: 10px;
-    background:#FF3D00;
-    animation: move 3s linear infinite alternate;
-  }
-  @keyframes move {
-    0%, 5% {
-        left: -32px;
-        width: 16px;
-    }
-    15%, 20% {
-        left: -32px;
-        width: 48px;
-    }
-    30%, 35% {
-        left: 0px;
-        width: 16px;
-    }
-    45%, 50% {
-        left: 0px;
-        width: 48px;
-    }
-    60%, 65% {
-        left: 32px;
-        width: 16px;
-    }
-    75%, 80% {
-        left: 32px;
-        width: 48px;
-    }
-    95% {
-        left: 64px;
-        width: 16px;
-    }
-    100% {
-        left: 64px;
-        width: 16px;
-    }
-}
-
-.springer {
-  position: relative;
-  margin: auto;
-  box-sizing: border-box;
-  width: 120px;
-  height: 120px;
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 4px;
+  color: #000;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.1);
-  transform-origin: 50% 50%;
-  transform: perspective(200px) rotateX(66deg);
-  animation: spinner-wiggle 1.2s infinite;
+  box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 5px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px;
+  transform: translateX(-38px);
+  animation: l26 2s infinite linear;
 }
-.springer:before,
-.springer:after {
-  content: "";
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 4px solid #0000;
-  animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite,
-    spinner-fade 1.2s linear infinite;
+@keyframes l26 {
+  12.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px}
+  25%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 0px}
+  50%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  62.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 5px}
+  75%   {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  87.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 5px, 57px 0     0 0px,
+    19px 19px  0 5px, 38px 19px  0 0px, 57px 19px  0 0px}
 }
-.springer:before {
-  border-top-color: #fff;
-}
-.springer:after {
-  border-top-color: #ff3d00;
-  animation-delay: 0.4s;
-}
-
-@keyframes spinner-spin {
-  100% { transform: rotate(360deg)}
-}
-@keyframes spinner-fade {
-  25%, 75% { opacity: 0.1}
-  50% { opacity: 1 }
-}
- 
