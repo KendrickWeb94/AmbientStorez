@@ -1,9 +1,8 @@
 
 "use client"
 
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import Spinner from "../assets/spinner.gif"
+
 
 const Loader = () => {
   const [visible, setVisible] = useState(true);

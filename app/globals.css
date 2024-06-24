@@ -2,6 +2,8 @@
   @tailwind components;
   @tailwind utilities;
 
+  
+
   @layer base {
     :root {
       --background: 0 0% 100%;
@@ -72,6 +74,9 @@
     }
     body {
       @apply bg-background text-foreground;
+    }
+    .flex-center{
+      @apply flex items-center justify-center;
     }
   }
 /* HTML: <div class="loader"></div> *//* HTML: <div class="loader"></div> */

@@ -7,10 +7,11 @@ import { ModeToggle } from "@/components/Mode-toggle";
 import { ReactNode } from "react";
 import { AuthContextProvider } from "../app/context/AuthContext";
 import Loader from "./animations/Loader";
+import TopTag from "./components/TopTag";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "kenny Storez",
+  title: "AmbientStorez",
   description: "World leading stores in Products",
 };
 
@@ -32,6 +33,7 @@ export default function RootLayout({
                 <ModeToggle />
               </div>
               <Loader />
+              <TopTag />
               {children}
             </main>
           </ThemeProvider>

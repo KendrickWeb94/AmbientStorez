@@ -13,11 +13,16 @@ const config: Config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+     
     },
     extend: {
+      screens: {
+      "2xl": "1400px",
+      "ds": "320px",
+      "xxs" :"350px",
+      "xs": "480px",
+      "bs": "520px",
+      },
       colors: {
         // Your existing color definitions...
         border: "hsl(var(--border))",
