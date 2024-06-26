@@ -8,7 +8,7 @@ export interface NavLink {
   }
   
   const navLinks: NavLink[] = [
-    { id: 1, text: "Home", url: "#" },
+    { id: 1, text: "Home", url: "./" },
     { id: 2, text: "About", url: "..#" },
     { id: 3, text: "Contact", url: "#" },
     { id: 4, text: "Get Started", url: "#" }
