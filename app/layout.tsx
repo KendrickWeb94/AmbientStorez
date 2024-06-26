@@ -8,6 +8,7 @@ import { ReactNode } from "react";
 import { AuthContextProvider } from "../app/context/AuthContext";
 import Loader from "./animations/Loader";
 import TopTag from "./components/TopTag";
+import { Navbar } from "./components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({
               </div>
               <Loader />
               <TopTag />
+              <Navbar />
               {children}
             </main>
           </ThemeProvider>

@@ -1,4 +1,4 @@
-"use client"
+{/* "use client"
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { UserAuth } from "../context/AuthContext";
@@ -96,3 +96,29 @@ const Navbar = () => {
 };
 
 export default Navbar;
+*/}
+
+import Image from 'next/image'
+import React from 'react'
+import logolight from "../../app/assets/logos/ambient-logo-light.svg"
+import logodark from "../../app/assets/logos/ambient-logo-dark.svg"
+import navLinks from '../data/NavLinks'
+import NavItems from './NavItem'
+
+export const Navbar = () => {
+  return (
+    <div className=' w-full border-b border-b-gray-400/45 h-auto p-3 '>
+      <div className=' w-full mx-auto max-w-[94%] '>
+        <div className=' w-full flex items-center justify-between '>
+            <div className='logo'>
+            <Image src={logolight} alt='logo' className=' dark:hidden block  w-44'/>
+            <Image src={logodark} alt='logo' className='hidden dark:block w-44'/>
+            </div>
+            <div className="">
+              <NavItems links={navLinks}/>
+            </div>
+        </div>
+      </div>
+    </div>
+  )
+}

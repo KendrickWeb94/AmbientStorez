@@ -1,5 +1,5 @@
 "use client"
-import Navbar from "./components/Header";
+import { Navbar } from "./components/Header";
 
 
 
@@ -13,7 +13,7 @@ import Navbar from './components/Header';
 
 const page = () => {
   return (
-    <div className=' w-full  h-auto py-2'>
+    <div className=' w-full inter h-auto py-2'>
         
     </div>
   );

@@ -78,6 +78,9 @@
     .flex-center{
       @apply flex items-center justify-center;
     }
+    .smooth{
+      @apply transition-all duration-500 delay-500 ease-in-out;
+    }
   }
 /* HTML: <div class="loader"></div> *//* HTML: <div class="loader"></div> */
 .loader {
