@@ -128,12 +128,12 @@ export const Navbar = () => {
           <div className="">
             <NavItems links={navLinks} />
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex cursor-pointer items-center gap-6">
             <div className="  w-auto rounded-sm p-1 px-2 bg-gray-400/45 flex items-center jusify-between gap-3 ">
               <input
                 type="text"
                 placeholder="Search For anything"
-                className=" outline-none placeholder:text-gray-500 text-gray-600 text-xs font-medium bg-transparent"
+                className=" outline-none hidden placeholder:text-gray-500 text-gray-600 text-xs font-medium bg-transparent"
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
