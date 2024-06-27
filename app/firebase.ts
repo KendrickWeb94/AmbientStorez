@@ -10,12 +10,12 @@ import { getFirestore } from 'firebase/firestore';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAHFjgFZMeEYokMIv6ZbbtAwGU9sAFo4lA",
-  authDomain: "enver-digital-agency.firebaseapp.com",
-  projectId: "enver-digital-agency",
-  storageBucket: "enver-digital-agency.appspot.com",
-  messagingSenderId: "330923313409",
-  appId: "1:330923313409:web:d04d00a6d390eee4aaf300"
+  apiKey: "AIzaSyDWhLQfdHEV2ZnVJ8AwoBMVlqxH80atJnk",
+  authDomain: "ambeint-storez.firebaseapp.com",
+  projectId: "ambeint-storez",
+  storageBucket: "ambeint-storez.appspot.com",
+  messagingSenderId: "286415150360",
+  appId: "1:286415150360:web:24b2c55adf1c3868abd26d"
 };
 
 
