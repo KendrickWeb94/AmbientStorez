@@ -1,8 +1,12 @@
 
-export const page = () => {
-        return(
-            <>
-            <div className="w-full h-96 text-6xl">404</div>
-            </>
-        )
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>
+      404
+    </div>
+  )
 }
+
+export default page
