@@ -112,6 +112,7 @@ import { useAuth } from "../context/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ModeToggle } from "@/components/Mode-toggle";
+import ResponsiveNabar from "./ResponsiveNabar";
 
 export const Navbar = () => {
   const { user, googleSignIn, emailSignIn, logOut } = useAuth();
@@ -141,6 +142,7 @@ export const Navbar = () => {
     <>
       <ToastContainer />
       <div className="w-full border-b border-b-gray-400/45 h-auto p-3">
+      <ResponsiveNabar />
         <div className="w-full mx-auto max-w-[94%]">
           <div className="w-full flex items-center justify-between">
             <div className="logo">
