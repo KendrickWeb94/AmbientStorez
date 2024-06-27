@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "../data/NavLinks";
-const NavItems: React.FC<{ links: NavLink[] }> = ({ links }) => {
+import { NavLinks } from "../data/navlinks";
+
+const NavItems: React.FC<{ links: NavLinks[] }> = ({ links }) => {
   return (
     <div>
       <ul className=" flex md:items-center gap-5 text-sm ds:flex-col md:flex-row">
