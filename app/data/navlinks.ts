@@ -1,13 +1,13 @@
 
 
 // navlink.ts
-export interface NavLink {
+export interface NavLinks {
     id: number;
     text: string;
     url: string;
   }
   
-  const navLinks: NavLink[] = [
+  const navLinks: NavLinks[] = [
     { id: 1, text: "Home", url: "./" },
     { id: 2, text: "About", url: "..#" },
     { id: 3, text: "Contact", url: "#" },
