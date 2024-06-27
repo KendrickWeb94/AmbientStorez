@@ -111,6 +111,7 @@ import Link from "next/link";
 import { useAuth } from "../context/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ModeToggle } from "@/components/Mode-toggle";
 
 export const Navbar = () => {
   const { user, googleSignIn, emailSignIn, logOut } = useAuth();
@@ -179,6 +180,7 @@ export const Navbar = () => {
                   />
                 </svg>
               </div>
+              <ModeToggle />
               {!user ? (
                 <div className=" flex items-center gap-5">
                   <svg

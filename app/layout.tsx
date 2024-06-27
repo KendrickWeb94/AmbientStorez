@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/Theme-Provider";
-import { ModeToggle } from "@/components/Mode-toggle";
 import { ReactNode } from "react";
 import { AuthContextProvider } from "../app/context/AuthContext";
 import Loader from "./animations/Loader";
@@ -30,9 +29,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <main className=" w-full h-auto relative mx-auto">
-              <div className=" m-5 p-2 z-40 bottom-0 right-0 fixed">
-                <ModeToggle />
-              </div>
+          
               <Loader />
               <TopTag />
               <Navbar />
