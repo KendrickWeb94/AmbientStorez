@@ -77,7 +77,7 @@ export const Hero = () => {
         </div>
 
         <div className="p-3 pt-10">
-          <div className=" flex-grow flex cursor-pointer items-center overflow-hidden rounded-md h-[375] bg-black p-3">
+          <div className=" flex-grow flex cursor-pointer items-center overflow-hidden rounded-md h-[365] bg-black p-3">
             <Image src={iphonesvg} alt="" />
           </div>
         </div>
