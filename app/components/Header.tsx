@@ -128,6 +128,8 @@ export const Navbar = () => {
     }
   };
 
+  
+
   const handleSignOut = async () => {
     try {
       await logOut();
@@ -141,8 +143,8 @@ export const Navbar = () => {
   return (
     <>
       <ToastContainer />
-      <div className="w-full border-b border-b-gray-400/45 h-auto p-3">
       <ResponsiveNabar />
+      <div className="w-full border-b border-b-gray-400/45 h-auto p-3">
         <div className="w-full mx-auto max-w-[95%]">
           <div className="w-full flex items-center justify-between">
             <div className="logo">
