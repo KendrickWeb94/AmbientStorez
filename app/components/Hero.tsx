@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <div className="w-full">
       <div className="w-full gap-24 flex mx-auto max-w-[94%]">
-        <div className="w-[217px] pt-10 h-auto border-r border-r-gray-500/45 p-3">
+        <div className="w-[217px] lg:block ds:hidden pt-10 h-auto border-r border-r-gray-500/45 p-3">
           <ul className="cursor-pointer flex space-y-5 flex-col">
             <li className="text-sm font-medium flex items-center gap-3">
               {" "}

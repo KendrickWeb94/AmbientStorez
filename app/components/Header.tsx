@@ -143,21 +143,21 @@ export const Navbar = () => {
       <ToastContainer />
       <div className="w-full border-b border-b-gray-400/45 h-auto p-3">
       <ResponsiveNabar />
-        <div className="w-full mx-auto max-w-[94%]">
+        <div className="w-full mx-auto max-w-[95%]">
           <div className="w-full flex items-center justify-between">
             <div className="logo">
               <Image
                 src={logolight}
                 alt="logo"
-                className="dark:hidden block w-44"
+                className="dark:hidden block max-w-44 min-w-28"
               />
               <Image
                 src={logodark}
                 alt="logo"
-                className="hidden dark:block w-44"
+                className="hidden dark:block max-w-44 min-w-28"
               />
             </div>
-            <div>
+            <div className=" md:block ds:hidden">
               <NavItems links={navLinks} />
             </div>
             <div className="flex cursor-pointer items-center gap-6">
